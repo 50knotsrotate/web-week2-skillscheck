@@ -8,7 +8,6 @@ var faveColors = ['red', 'green', 'blue']
 
 //////////////////Step 2////////////////////
 // Create an object called 'me' that has these keys: firstname, superHeroName, homeTown, superPowers, superPowerXP, profileImage. 
-
 var me = {
     firstName: 'Patrick',
     superHeroName: 'Superb Man',
@@ -18,12 +17,10 @@ var me = {
         "Obscure movie references",
         "Flying"
     ],
-    superPowerXP: function () { return Math.floor(Math.random() * 100) + 1 },
-    profileImage: function () {
-
-        return `https://randomuser.me/api/portraits/med/lego/${Math.floor(Math.random() * 10) + 1}.jpg`
-    }
+    superPowerXP: function () { return Math.floor(Math.random() * 100) + 1 }
 }
+
+me.profileImage = function () { return `https://randomuser.me/api/portraits/med/lego/${Math.floor(Math.random() * 10) + 1 }.jpg` }
 
 // The firstName key should be your name as a string. 
 

@@ -22,7 +22,6 @@ function setGroceryListTitle(x) {
 //Create a function called 'addItem' that takes in one paramter called item. Add the item param to the end of the groceries array created above. Inside of addItem, invoke displayData() which is a function we created that takes care of some of the leg work unrelated to this module.
 
 function addItem(item) { 
-    console.log(item)
     groceries.push(item)
     displayData()
 }
@@ -31,7 +30,8 @@ function addItem(item) {
 //Create a function called removeItem that takes in one parmater called index. Inside of the function remove the item from the groceries array above using splice. Invoke the displayData() function again.
 
 function removeItem(index) {
-   return  groceries.splice(index, 1)
+  return groceries.splice(index, 1)
+  displayData()
  }
 
 //////////////////STEP 6////////////////////
